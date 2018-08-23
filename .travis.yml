@@ -1,0 +1,10 @@
+#Project Language
+language: java
+#comment if you don't need sudo
+sudo: required
+jdk: oraclejdk10
+before_script:
+- sudo chmod +x mvnw
+- "./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -v"
+script:
+- ./mvnw test
