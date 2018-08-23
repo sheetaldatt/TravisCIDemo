@@ -32,7 +32,7 @@ public class SimpleMathTests {
 
 	@Test
 	public void testMultiply() {
-		assertTrue(math.multiply(12, 3) == 37);
+		assertTrue(math.multiply(12, 3) == 36);
 	}
 
 	@Test
